@@ -283,16 +283,16 @@ footer{border-top:1px solid var(--border);padding:26px 0;text-align:center;color
     <div class="sec-head"><span class="num">04.</span><h2>Selected Projects</h2><span class="line"></span></div>
     <div class="proj-grid">
       <div class="proj">
-        <div class="ph"><h3>YoSuite — Architecture & Billing</h3><span class="tag live">Staging + Live</span></div>
-        <p><b style="color:var(--text)">Designed the full staging & live deployment architecture myself</b>: Caddy (auto-HTTPS reverse proxy), Dozzle container-log monitoring over SSH, SSH-based env management, Docker, and GitHub Actions that <b style="color:var(--text)">auto-release on version tags</b> with zero downtime. Plus a complete Stripe billing system — plan tiers, prorated subscriptions, add-ons & webhook lifecycle.</p>
-        <div class="stack"><span>Caddy</span><span>· Dozzle</span><span>· Docker</span><span>· GitHub Actions</span><span>· SSH</span><span>· Stripe</span></div>
-        <a class="plink" href="https://yosuite.com/" target="_blank">yosuite.com →</a>
+        <div class="ph"><h3>YoSuite Ecosystem</h3><span class="tag live">Staging · Live</span></div>
+        <p>A full multi-product SaaS ecosystem (à la Zoho) built as the parent brand. Products: <b style="color:var(--text)">YoHRM</b> (HRM · <a href="https://app.yosuite.net/hrm" target="_blank" style="color:var(--accent)">app.yosuite.net/hrm</a>), <b style="color:var(--text)">YoPM</b> (PM software · <a href="https://app.yosuite.net/yopm" target="_blank" style="color:var(--accent)">app.yosuite.net/yopm</a>), <b style="color:var(--text)">YoCRM</b> (coming soon). Supports workspace subdomains (<span class="mono" style="font-size:.85em">workspace_slug.yosuite.net/hrm</span>) and fully custom domains. Self-designed deployment: Caddy, Dozzle over SSH, Docker, GitHub Actions tag-based auto-release. Market release → <a href="https://app.yosuite.com" target="_blank" style="color:var(--accent)">app.yosuite.com</a>.</p>
+        <div class="stack"><span>Node.js</span><span>· TypeScript</span><span>· React</span><span>· Next.js</span><span>· Caddy</span><span>· Docker</span></div>
+        <a class="plink" href="https://app.yosuite.net" target="_blank">app.yosuite.net →</a>
       </div>
       <div class="proj">
-        <div class="ph"><h3>YoPM</h3><span class="tag live">Staging + Live</span></div>
-        <p>Universal SaaS admin & billing platform — any product plugs in via API for complete auth + multi-gateway billing (Stripe + SSLCommerz) with an extensible adapter. Runs on the <b style="color:var(--text)">same self-designed staging & live architecture</b> — Caddy, Dozzle, Docker, GitHub Actions & tag-based auto-release.</p>
-        <div class="stack"><span>Node.js</span><span>· Next.js</span><span>· PostgreSQL</span><span>· Caddy</span><span>· GitHub Actions</span></div>
-        <a class="plink" href="https://roxnor.com/" target="_blank">by Roxnor →</a>
+        <div class="ph"><h3>YoCore</h3><span class="tag" style="background:rgba(157,123,255,.12);color:var(--accent2)">Infrastructure</span></div>
+        <p>Central superadmin backbone powering the entire YoSuite ecosystem. Every product connects via SDK for <b style="color:var(--text)">unified auth, token management, and multi-gateway billing</b> (Stripe + SSLCommerz) — any gateway, any product, just plug in. Architecture, planning, and full implementation built from scratch.</p>
+        <div class="stack"><span>Node.js</span><span>· PostgreSQL</span><span>· Stripe</span><span>· SSLCommerz</span></div>
+        <a class="plink" href="https://yocore.yosuite.net/" target="_blank">yocore.yosuite.net →</a>
       </div>
       <div class="proj">
         <div class="ph"><h3>GetGenie AI</h3><span class="tag live">Live</span></div>
@@ -302,8 +302,8 @@ footer{border-top:1px solid var(--border);padding:26px 0;text-align:center;color
       </div>
       <div class="proj">
         <div class="ph"><h3>Revorium</h3><span class="tag live">Live</span></div>
-        <p>Cross-border freelancer payments platform. Integrated Google Pay & Apple Pay (Revolut + Stripe), Stripe Payment Links, and PayPal with webhook-based confirmation.</p>
-        <div class="stack"><span>Node.js</span><span>· React</span><span>· Stripe</span><span>· Revolut API</span></div>
+        <p>Cross-border freelancer payment platform built end-to-end. Integrated <b style="color:var(--text)">Google Pay & Apple Pay</b> (via Revolut + Stripe), Stripe Payment Links, and PayPal — full webhook-based payment lifecycle with multi-currency support, real-time confirmations, and clean payout flows.</p>
+        <div class="stack"><span>Node.js</span><span>· React</span><span>· Stripe</span><span>· Revolut API</span><span>· PayPal</span></div>
         <a class="plink" href="https://revorium.com/" target="_blank">revorium.com →</a>
       </div>
       <div class="proj">
