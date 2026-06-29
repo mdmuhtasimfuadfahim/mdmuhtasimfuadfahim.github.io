@@ -254,13 +254,13 @@ footer{border-top:1px solid var(--border);padding:26px 0;text-align:center;color
         <div class="when">Mar 2025 — Present</div>
         <h3>Software Development Engineer II</h3>
         <a class="co" href="https://roxnor.com/" target="_blank">Roxnor (parent: XpeedStudio)</a>
-        <p>Leading all backend & frontend engineering for the GetGenie AI platform. Designed the staging & live deployment architecture for <b style="color:var(--text)">YoPM</b> — Caddy, Dozzle, Docker & GitHub Actions with tag-based auto-release. Integrating LangChain, Google Search Console & Analytics; leveraging Copilot & Claude Code.</p>
+        <p>Leading all backend & frontend engineering for the GetGenie AI platform. Architecting and building the <b style="color:var(--text)">YoSuite</b> ecosystem (YoHRM · YoPM · YoCRM) and the <b style="color:var(--text)">YoCore</b> infrastructure layer — handling auth, token management, and multi-gateway billing across all products. Integrating LangChain, Google Search Console & Analytics; leveraging Copilot & Claude Code.</p>
       </div>
       <div class="tl-item">
         <div class="when">Jan 2023 — Feb 2025</div>
         <h3>Software Engineer</h3>
         <a class="co" href="https://xpeedstudio.com/" target="_blank">XpeedStudio</a>
-        <p>Built and owned the YoSuite SaaS product (Node.js, TypeScript, React, Docker). Single-handedly designed its full <b style="color:var(--text)">staging & live deployment architecture</b> — Caddy reverse proxy, Dozzle log monitoring over SSH, SSH-based env management, Docker, and GitHub Actions that auto-release on version tags. Plus a complete Stripe billing system with prorated subscriptions and add-ons.</p>
+        <p>Built and owned the YoSuite SaaS product end-to-end (Node.js, TypeScript, React, Docker). Single-handedly designed the full <b style="color:var(--text)">zero-downtime staging & live deployment architecture</b> — Caddy auto-HTTPS reverse proxy, Dozzle container-log monitoring over SSH, SSH-based environment management, Docker, and GitHub Actions with tag-based auto-release. Delivered a complete Stripe billing system with plan tiers, prorated subscriptions, add-ons, and webhook lifecycle management.</p>
       </div>
       <div class="tl-item">
         <div class="when">Apr 2022 — Oct 2022</div>
@@ -283,38 +283,38 @@ footer{border-top:1px solid var(--border);padding:26px 0;text-align:center;color
     <div class="sec-head"><span class="num">04.</span><h2>Selected Projects</h2><span class="line"></span></div>
     <div class="proj-grid">
       <div class="proj">
-        <div class="ph"><h3>YoSuite Ecosystem</h3><span class="tag live">Staging · Live</span></div>
-        <p>A full multi-product SaaS ecosystem (à la Zoho) built as the parent brand. Products: <b style="color:var(--text)">YoHRM</b> (HRM · <a href="https://app.yosuite.net/hrm" target="_blank" style="color:var(--accent)">app.yosuite.net/hrm</a>), <b style="color:var(--text)">YoPM</b> (PM software · <a href="https://app.yosuite.net/yopm" target="_blank" style="color:var(--accent)">app.yosuite.net/yopm</a>), <b style="color:var(--text)">YoCRM</b> (coming soon). Supports workspace subdomains (<span class="mono" style="font-size:.85em">workspace_slug.yosuite.net/hrm</span>) and fully custom domains. Self-designed deployment: Caddy, Dozzle over SSH, Docker, GitHub Actions tag-based auto-release. Market release → <a href="https://app.yosuite.com" target="_blank" style="color:var(--accent)">app.yosuite.com</a>.</p>
+        <div class="ph"><h3>YoSuite</h3><span class="tag live">Live</span></div>
+        <p>A multi-product B2B SaaS ecosystem — the parent brand for a growing suite of business tools: <b style="color:var(--text)">YoHRM</b> (HR management), <b style="color:var(--text)">YoPM</b> (project management), <b style="color:var(--text)">YoCRM</b> (coming soon). Engineered for multi-tenant isolation with per-workspace subdomain routing and custom domain support. Built on a self-designed zero-downtime deployment pipeline — Caddy auto-HTTPS reverse proxy, Dozzle container-log monitoring over SSH, Docker, and GitHub Actions with tag-based auto-release.</p>
         <div class="stack"><span>Node.js</span><span>· TypeScript</span><span>· React</span><span>· Next.js</span><span>· Caddy</span><span>· Docker</span></div>
-        <a class="plink" href="https://app.yosuite.net" target="_blank">app.yosuite.net →</a>
+        <a class="plink" href="https://yosuite.com" target="_blank">yosuite.com →</a>
       </div>
       <div class="proj">
         <div class="ph"><h3>YoCore</h3><span class="tag" style="background:rgba(157,123,255,.12);color:var(--accent2)">Infrastructure</span></div>
-        <p>Central superadmin backbone powering the entire YoSuite ecosystem. Every product connects via SDK for <b style="color:var(--text)">unified auth, token management, and multi-gateway billing</b> (Stripe + SSLCommerz) — any gateway, any product, just plug in. Architecture, planning, and full implementation built from scratch.</p>
+        <p>The centralized infrastructure layer that powers the entire YoSuite ecosystem. Products connect via a product-agnostic SDK and immediately inherit <b style="color:var(--text)">cross-product authentication, session & token lifecycle management, and multi-gateway billing</b> — Stripe and SSLCommerz — with no redundant integration work per product. Architecture, billing adapter pattern, SDK, and full implementation built from scratch.</p>
         <div class="stack"><span>Node.js</span><span>· PostgreSQL</span><span>· Stripe</span><span>· SSLCommerz</span></div>
         <a class="plink" href="https://yocore.yosuite.net/" target="_blank">yocore.yosuite.net →</a>
       </div>
       <div class="proj">
         <div class="ph"><h3>GetGenie AI</h3><span class="tag live">Live</span></div>
-        <p>Sole engineer owning the full backend, frontend, and deployment of an AI content writer & SEO research platform. Built prompt-engineering pipelines and integrated Apify, Copyscape, Keywords Everywhere & Socket.IO.</p>
-        <div class="stack"><span>Node.js</span><span>· MongoDB</span><span>· OpenAI</span><span>· LangChain</span><span>· Docker</span></div>
+        <p>Sole engineer with full ownership of backend, frontend, and deployment for an AI content writing and SEO research platform. Integrated <b style="color:var(--text)">OpenAI & Hugging Face</b> via LangChain pipelines, <b style="color:var(--text)">Google Search Console & GA4</b> for SEO insights and analytics, Google Ads, Apify for web scraping, Copyscape for plagiarism detection, and Keywords Everywhere. Designed and owned the complete production deployment infrastructure.</p>
+        <div class="stack"><span>Node.js</span><span>· MongoDB</span><span>· OpenAI</span><span>· LangChain</span><span>· Hugging Face</span><span>· GSC · GA4</span><span>· Apify</span><span>· Docker</span></div>
         <a class="plink" href="https://getgenie.ai/" target="_blank">getgenie.ai →</a>
       </div>
       <div class="proj">
         <div class="ph"><h3>Revorium</h3><span class="tag live">Live</span></div>
-        <p>Cross-border freelancer payment platform built end-to-end. Integrated <b style="color:var(--text)">Google Pay & Apple Pay</b> (via Revolut + Stripe), Stripe Payment Links, and PayPal — full webhook-based payment lifecycle with multi-currency support, real-time confirmations, and clean payout flows.</p>
+        <p>Cross-border payment platform engineered for freelancers and independent professionals. Integrated <b style="color:var(--text)">Google Pay & Apple Pay</b> via Revolut + Stripe, Stripe Payment Links, and PayPal — unified under a single webhook event pipeline handling multi-currency transactions, real-time payment confirmation, and automated payout flows.</p>
         <div class="stack"><span>Node.js</span><span>· React</span><span>· Stripe</span><span>· Revolut API</span><span>· PayPal</span></div>
         <a class="plink" href="https://revorium.com/" target="_blank">revorium.com →</a>
       </div>
       <div class="proj">
         <div class="ph"><h3>SwipeXYZ</h3><span class="tag">Web3</span></div>
-        <p>Social media + NFT marketplace. Smart contracts on BSC & Polygon (ERC20 token rewards, ERC721 NFTs) backed by a Node.js / PostgreSQL service layer.</p>
+        <p>Social media platform with an integrated NFT marketplace. ERC20 token reward mechanics and ERC721 NFT minting deployed on BSC and Polygon, backed by a Node.js + PostgreSQL service layer.</p>
         <div class="stack"><span>Solidity</span><span>· Node.js</span><span>· PostgreSQL</span><span>· BSC/Polygon</span></div>
         <span class="plink" style="color:var(--faint)">by Softcent</span>
       </div>
       <div class="proj">
         <div class="ph"><h3>Open-Source npm Packages</h3><span class="tag">OSS</span></div>
-        <p>Published reusable libraries for messaging and crypto: pub/sub clients for Kafka & RabbitMQ, a libsodium-based encrypter, and more.</p>
+        <p>Published production-grade utility libraries: pub/sub abstractions for Kafka and RabbitMQ, a libsodium-backed symmetric encrypter, and more — collectively downloaded thousands of times.</p>
         <div class="stack"><span>Node.js</span><span>· Kafka</span><span>· RabbitMQ</span><span>· libsodium</span></div>
         <a class="plink" href="https://www.npmjs.com/package/kafka-pub-sub" target="_blank">View on npm →</a>
       </div>
