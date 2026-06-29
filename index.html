@@ -113,7 +113,7 @@ section{padding:60px 0}
   display:flex;flex-direction:column;transition:.25s;position:relative;overflow:hidden}
 .proj::after{content:"";position:absolute;inset:0;border-radius:16px;padding:1px;
   background:var(--grad);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
-  -webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:.25s}
+  -webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:.25s;pointer-events:none}
 .proj:hover{transform:translateY(-4px)}
 .proj:hover::after{opacity:1}
 .proj .ph{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px}
@@ -283,8 +283,8 @@ footer{border-top:1px solid var(--border);padding:26px 0;text-align:center;color
     <div class="sec-head"><span class="num">04.</span><h2>Selected Projects</h2><span class="line"></span></div>
     <div class="proj-grid">
       <div class="proj">
-        <div class="ph"><h3>YoSuite</h3><span class="tag live">Live</span></div>
-        <p>A multi-product B2B SaaS ecosystem — the parent brand for a growing suite of business tools: <b style="color:var(--text)">YoHRM</b> (HR management), <b style="color:var(--text)">YoPM</b> (project management), <b style="color:var(--text)">YoCRM</b> (coming soon). Engineered for multi-tenant isolation with per-workspace subdomain routing and custom domain support. Built on a self-designed zero-downtime deployment pipeline — Caddy auto-HTTPS reverse proxy, Dozzle container-log monitoring over SSH, Docker, and GitHub Actions with tag-based auto-release.</p>
+        <div class="ph"><h3>YoSuite</h3><span class="tag live">Staging · Live</span></div>
+        <p>A multi-product B2B SaaS ecosystem — the parent brand for <b style="color:var(--text)">YoHRM</b> (HR management · <a href="https://app.yosuite.net/hrm" target="_blank" style="color:var(--accent)">staging</a> · <a href="https://app.yosuite.com/hrm" target="_blank" style="color:var(--accent3)">prod</a>), <b style="color:var(--text)">YoPM</b> (project management · <a href="https://app.yosuite.net/yopm" target="_blank" style="color:var(--accent)">staging</a>), and <b style="color:var(--text)">YoCRM</b> (coming soon). Each workspace gets isolated subdomain routing (<span class="mono" style="font-size:.82em">workspace_slug.yosuite.net/hrm</span>) with full custom domain support (<span class="mono" style="font-size:.82em">custom_domain.com/hrm</span>). Self-designed zero-downtime deployment pipeline — Caddy auto-HTTPS, Dozzle log monitoring over SSH, Docker, GitHub Actions tag-based auto-release.</p>
         <div class="stack"><span>Node.js</span><span>· TypeScript</span><span>· React</span><span>· Next.js</span><span>· Caddy</span><span>· Docker</span></div>
         <a class="plink" href="https://yosuite.com" target="_blank">yosuite.com →</a>
       </div>
